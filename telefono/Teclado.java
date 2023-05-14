@@ -1,9 +1,12 @@
 package com.montecastelo.telefono;
 
+import java.util.List;
 import java.util.Random;
 
-public class Teclado {
+public class Teclado{
+
     private final Telefono telefono;
+
 
     public Teclado(Telefono telefono) {
         this.telefono = telefono;
@@ -18,5 +21,4 @@ public class Teclado {
             telefono.addDigito(nuevoDigito);
         }
     }
-
 }
