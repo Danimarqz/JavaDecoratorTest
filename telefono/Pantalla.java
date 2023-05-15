@@ -11,11 +11,11 @@ public class Pantalla implements Observador{
     }
 
     private final Telefono telefono;
-
-    public Pantalla(Telefono telefono) {
+    //Llamar a Pantalla sin observador
+    public Pantalla(Telefono telefono){
         this.telefono = telefono;
-        telefono.addObv(this);
     }
+    //Llamar a Pantalla CON observador
 
     @Override
     public void update(int digito) {
